@@ -5,6 +5,13 @@
 
 This will explain how to create webview for Android and iOS
 
+## How it looks like
+### Android
+![Image](./MarkdownImages/AExample01.png)
+![Image](./MarkdownImages/AExample02.png)
+
+### iOS
+
 # Guide for iOS webview
 
 1. Build iOS with Unity3D

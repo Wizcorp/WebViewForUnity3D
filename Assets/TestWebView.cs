@@ -27,6 +27,11 @@ public class TestWebView : MonoBehaviour
 		currentActivity.Call("OpenWebView");
 	}
 
+	public void CallBack(string message)
+	{
+		Context.text = message;
+	}
+
 	void Start()
 	{
 		AndroidJavaClass unity = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
@@ -52,11 +57,6 @@ public class TestWebView : MonoBehaviour
 
 	public void CallShareApp()
 	{
-	}
-
-	public void CallBack(string message)
-	{
-		Context.text = message;
 	}
 
 	void Start()
