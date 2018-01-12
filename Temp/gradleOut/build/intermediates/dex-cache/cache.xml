@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/kyeong-jaemin/Documents/Wizcorp/WebView/Temp/gradleOut/libs/unity-classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="99b40cb1124c72b774ac09dbaa191571c155d9b0">
+        <dex dex="/Users/kyeong-jaemin/Documents/Wizcorp/WebView/Temp/gradleOut/build/intermediates/pre-dexed/debug/unity-classes_8a0be2524ce91561c98ae0841c6e8b3132c1edab.jar" />
+    </item>
+    <item
+        jar="/Users/kyeong-jaemin/Documents/Wizcorp/WebView/Temp/gradleOut/libs/WebVIewLib.jar.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="005c157b19498f85985b80a6eb8f5a608d6a9550">
+        <dex dex="/Users/kyeong-jaemin/Documents/Wizcorp/WebView/Temp/gradleOut/build/intermediates/pre-dexed/debug/WebVIewLib.jar_5fb41608fed39c5b6f10854ece401672df9f72c9.jar" />
+    </item>
+
+</items>
