@@ -11,6 +11,13 @@ public class TestWebView : MonoBehaviour
 	string subject = "WORD-O-MAZE";
 	string body = "PLAY THIS AWESOME. GET IT ON THE PLAYSTORE";
 
+	#region shared
+	public void CallBack(string message)
+	{
+		Context.text = message;
+	}
+	#endregion
+
 #if UNITY_ANDROID
 	public void CallShareApp()
 	{
@@ -25,11 +32,6 @@ public class TestWebView : MonoBehaviour
 		AndroidJavaClass unity = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
 		AndroidJavaObject currentActivity = unity.GetStatic<AndroidJavaObject>("currentActivity");
 		currentActivity.Call("OpenWebView");
-	}
-
-	public void CallBack(string message)
-	{
-		Context.text = message;
 	}
 
 	void Start()
