@@ -1,6 +1,10 @@
 **Webview for Android and iOS** <br/>
 **Written by *Jae* 2018/01/11**
 
+# Preface
+
+This will explain how to create webview for Android and iOS
+
 # Guide for iOS webview
 
 1. Build iOS with Unity3D
@@ -26,8 +30,18 @@
 
 To make it run in Unity3D with Java code needs compiled .jar or .arr file.
 
-1. Build webview android project with android studio
-2. Go to project folder > builds > intermediates > bundles > debug
-3. Find a classes.jar file and place the file into Unity3D > Plugins > Android
-4. Build
-5. Test (Use AVD or real android device)
+1. Get Android webview plugin from gitlab (https://gitlab.wizcorp.net/kjmin/webviewAndroidPlugin)
+2. Build android project with android studio
+- By cliking hammer button on the top menu bar (WebView:app [exportjar])
+![Image](./MarkdownImages/Image04.png)
+
+3. Go to project folder > builds > intermediates > bundles > debug
+![Image](./MarkdownImages/Image05.png)
+
+4. Find a classes.jar file and place the file into Unity3D > Plugins > Android
+![Image](./MarkdownImages/Image06.png)
+
+5. Build apk file with Unity3D
+![Image](./MarkdownImages/Image07.png)
+
+6. Test (Use AVD or real android device)
