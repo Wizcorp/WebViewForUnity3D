@@ -12,7 +12,17 @@ This will explain how to create webview for Android and iOS
 
 ### iOS
 
-# Guide for iOS webview
+# How to use
+
+1. Build project for iOS or Android
+2. Launch app and test
+
+## Entry point
+
+1. Assets/TestWebView.cs
+2. Assets/Plugins/Android or Assets/Plugins/iOS
+
+# How to make a build for iOS
 
 1. Build iOS with Unity3D
 
@@ -33,7 +43,7 @@ This will explain how to create webview for Android and iOS
 5. Build Project & Test with a iOS device
 - Press play button on the top menu bar
 
-# Guide for Android webview
+# How to make a build for Android
 
 To make it run in Unity3D with Java code needs compiled .jar or .arr file.
 
