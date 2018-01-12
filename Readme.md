@@ -11,6 +11,8 @@ This will explain how to create webview for Android and iOS
 ![Image](./MarkdownImages/AExample02.png)
 
 ### iOS
+![Image](./MarkdownImages/AExample01.png)
+<img src="./MarkdownImages/iExample01.png" alt="Drawing" style="width: 400px;"/>
 
 # How to use
 
