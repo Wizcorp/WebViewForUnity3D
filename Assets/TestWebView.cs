@@ -21,7 +21,7 @@ public class TestWebView : MonoBehaviour
 	{
 		AndroidJavaClass unity = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
 		AndroidJavaObject currentActivity = unity.GetStatic<AndroidJavaObject>("currentActivity");
-		currentActivity.Call("shareText", subject, body);
+		currentActivity.Call("ShareText", "Subject", "Body");
 	}
 
 	public void CallWebView()
@@ -36,7 +36,7 @@ public class TestWebView : MonoBehaviour
 	{
 		AndroidJavaClass unity = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
 		AndroidJavaObject currentActivity = unity.GetStatic<AndroidJavaObject>("currentActivity");
-		currentActivity.Call("Initialize", this.gameObject.name, "CallBack");
+		currentActivity.Call("SetupCallBack", this.gameObject.name, "CallBack", "Calling back from Android");
 	}
 #endif
 
