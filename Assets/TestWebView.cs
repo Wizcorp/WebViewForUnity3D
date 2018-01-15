@@ -8,8 +8,6 @@ using UnityEngine.UI;
 public class TestWebView : MonoBehaviour
 {
 	public Text Context;
-	string subject = "WORD-O-MAZE";
-	string body = "PLAY THIS AWESOME. GET IT ON THE PLAYSTORE";
 
 	#region shared
 	public void CallBack(string message)
@@ -28,7 +26,7 @@ public class TestWebView : MonoBehaviour
 
 	public void CallWebView()
 	{
-		Debug.LogWarning("CALLWEBVIEW");
+		Debug.Log("Call WebView");
 		AndroidJavaClass unity = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
 		AndroidJavaObject currentActivity = unity.GetStatic<AndroidJavaObject>("currentActivity");
 		currentActivity.Call("OpenWebView");
@@ -48,11 +46,11 @@ public class TestWebView : MonoBehaviour
 	[DllImport("__Internal")]
 	private static extern void _openURL(string url);
 	[DllImport("__Internal")]
-	private static extern void _setup(string gameObject, string methodName);
+	private static extern void _setupCallBack(string gameObject, string methodName);
 
 	public void CallWebView()
 	{
-		Debug.LogWarning("Call WKView");
+		Debug.Log("Call WebView");
 
 		_openURL("https://www.google.com");
 	}
@@ -65,7 +63,7 @@ public class TestWebView : MonoBehaviour
 	{
 		if (Application.platform == RuntimePlatform.IPhonePlayer)
 		{
-			_setup(this.gameObject.name, "CallBack");
+			_setupCallBack(this.gameObject.name, "CallBack");
 
 			_nativeLog();
 		}

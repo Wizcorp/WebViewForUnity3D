@@ -36,12 +36,12 @@ extern void UnitySendMessage(const char *, const char *, const char *);
     return self;
 }
 
--(void) setup:(const char*)gameObjectName method:(const char*)methodName
+-(void) setupCallBack:(const char*)gameObjectName method:(const char*)methodName
 {
-	NSLog(@"Setting up modal");
+	NSLog(@"Setting up callback");
     NSLog(@"data = %@", [NSString stringWithUTF8String:gameObjectName]);
     NSLog(@"data = %@",  [NSString stringWithUTF8String:methodName]);
-    
+
     gameObject = [NSString stringWithUTF8String:gameObjectName];
 	method = [NSString stringWithUTF8String:methodName];
 }
@@ -76,11 +76,11 @@ extern "C"
       NSLog(@"Log called from Unity");
 	}
 
-	void _setup(const char* gameObjectName, const char* methodName) {
+	void _setupCallBack(const char* gameObjectName, const char* methodName) {
         if (nativeWebViewPlugin == nil)
             nativeWebViewPlugin = [[NativeWebView alloc] init];
 
-		[nativeWebViewPlugin setup:gameObjectName method:methodName];
+		[nativeWebViewPlugin setupCallBack:gameObjectName method:methodName];
 	}
 
     void _openURL(const char* url) {

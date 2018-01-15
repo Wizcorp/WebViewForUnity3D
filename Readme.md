@@ -3,7 +3,7 @@
 
 # Preface
 
-This will explain how to create webview for Android and iOS
+This will explain how to create a webview plugin for Android and iOS
 
 ## How it looks like
 ### Android
