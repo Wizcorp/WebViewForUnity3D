@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class TestWebView : MonoBehaviour
 {
+	public string URL = "https://wizcorp.jp";
 	public Text Context;
 
 	#region shared
@@ -29,7 +30,7 @@ public class TestWebView : MonoBehaviour
 		Debug.Log("Call WebView");
 		AndroidJavaClass unity = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
 		AndroidJavaObject currentActivity = unity.GetStatic<AndroidJavaObject>("currentActivity");
-		currentActivity.Call("OpenWebView");
+		currentActivity.Call("OpenWebView", URL);
 	}
 
 	void Start()
@@ -52,7 +53,7 @@ public class TestWebView : MonoBehaviour
 	{
 		Debug.Log("Call WebView");
 
-		_openURL("https://www.google.com");
+		_openURL(URL);
 	}
 
 	public void CallShareApp()
