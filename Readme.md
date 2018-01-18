@@ -1,20 +1,17 @@
-# WIP 2018-01-17
 # Preface
+
+# Requirements
+1. Unity3D 2017.1 or Above (Not tested in previous version)
+2. Android studio
+3. Xcode
+
+# Installation
 
 This will explain how to create a webview plugin for Android and iOS
 
 # Documentation
 
 [Wiki Page](https://github.com/Wizcorp/WebViewForUnity3D/wiki)
-
-## How it looks like
-### Android
-![Image](./MarkdownImages/AExample01.png)
-![Image](./MarkdownImages/AExample02.png)
-
-### iOS
-![Image](./MarkdownImages/AExample01.png)
-<img src="./MarkdownImages/iExample01.png" width="400"/>
 
 # How to use
 
