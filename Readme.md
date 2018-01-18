@@ -1,5 +1,7 @@
 # Preface
 
+Simple Android & iOS webview plugin for Unity3D
+
 # Requirements
 1. Unity3D 2017.1 or Above (Not tested in previous version)
 2. Android studio
@@ -7,7 +9,9 @@
 
 # Installation
 
-This will explain how to create a webview plugin for Android and iOS
+1. Download this Repository
+2. Open with Unity3D
+3. Open WebViewExmaple scene in Scenes folder
 
 # Documentation
 
@@ -15,10 +19,10 @@ This will explain how to create a webview plugin for Android and iOS
 
 # How to use
 
-1. Copy Plugins folder to your project
+1. Copy plugins folder to your project
 2. Launch app and test
 
-## Entry point
+# Miscellaneous thing
 
-1. Assets/TestWebView.cs
-2. Assets/Plugins/Android or Assets/Plugins/iOS
+When you close the webview, application will send you a callback with string parameter.
+So, you could use it or ignore it.

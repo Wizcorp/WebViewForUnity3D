@@ -240,7 +240,7 @@ GameObject:
   - component: {fileID: 713347367}
   - component: {fileID: 713347366}
   m_Layer: 0
-  m_Name: SceneManager
+  m_Name: WebViewManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -257,7 +257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a44cd228a2ce4ce1b5e5ac9dfe8984d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  URL: https://www.github.com
+  URL: https://wizcorp.jp
   Context: {fileID: 1673291618}
 --- !u!4 &713347367
 Transform:
